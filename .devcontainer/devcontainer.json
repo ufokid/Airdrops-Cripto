@@ -1,0 +1,30 @@
+{
+  "name": "Ruby on Rails - Airdrops Cripto",
+  "image": "mcr.microsoft.com/devcontainers/ruby:3-bullseye",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "nodeVersion": "18"
+    },
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+  },
+  "forwardPorts": [3000, 5432],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "rebornix.Ruby",
+        "castwide.solargraph",
+        "EditorConfig.EditorConfig",
+        "GitHub.Copilot"
+      ],
+      "settings": {
+        "ruby.lint": {
+          "rubocop": true
+        },
+        "ruby.codeCompletion": "solargraph"
+      }
+    }
+  },
+  "remoteUser": "vscode",
+  "postCreateCommand": "bundle install && rails db:create db:migrate",
+  "postStartCommand": "bundle check || bundle install"
+}
