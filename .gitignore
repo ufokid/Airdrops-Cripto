@@ -1,0 +1,62 @@
+# Rails
+.bundle/
+/vendor/
+/log/*
+/tmp/*
+/public/packs
+/public/packs-test
+/node_modules
+/yarn-error.log
+.byebug_history
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Database
+/db/*.sqlite3
+/db/*.sqlite3-journal
+
+# Test
+/coverage/
+.rspec
+
+# Cache
+.sass-cache/
+/vendor/bundle
+/lib/bundler/man/
+*.gem
+*.rbc
+.ruby-version
+.ruby-gemset
+.rvmrc
+
+# OS
+Thumbs.db
+.vagrant/
+
+# Credentials
+config/master.key
+config/credentials.yml.enc
+
+# Files uploaded by users
+/storage/*
+!/storage/.keep
+
+# Secrets
+secrets.yml
+
+# Ruby cache
+.rdoc_options
